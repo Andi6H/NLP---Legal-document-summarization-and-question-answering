@@ -4,18 +4,19 @@
 
 1. Clone the repository.
 2. Install the dependencies:
-   ```bash
-   pip install -r requirements.txt
-
-   ```
-3. Download the dataset and place it in the data/ directory.
+    ```bash
+    npm install
+    ```
+3. Download the dataset and place it in the `js/app/` directory.
 4. Run the application:
-
-   python app/main.py
+    ```bash
+    npm start
+    ```
 
 ## Endpoints
 
-- /summarize: Extractive summarization
-- /abstractive_summarize: Abstractive summarization
-- /answer: Question answering
-- /extract_entities: Clause extraction
+- `/summarize`: Extractive summarization
+- `/abstractive_summarize`: Abstractive summarization
+- `/answer`: Question answering
+- `/extract_entities`: Clause extraction
+
