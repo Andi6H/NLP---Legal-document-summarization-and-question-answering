@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Legal QA System</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f9;
+      }
+      .container {
+        max-width: 800px;
+        margin: 50px auto;
+        padding: 20px;
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      }
+      h1 {
+        text-align: center;
+        color: #333;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+      }
+      textarea,
+      input[type="text"] {
+        padding: 10px;
+        margin: 10px 0;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+      button {
+        padding: 10px;
+        font-size: 16px;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #45a049;
+      }
+      .output {
+        margin-top: 20px;
+        background: #f9f9f9;
+        padding: 15px;
+        border-radius: 4px;
+      }
+      .output h3 {
+        margin: 0;
+      }
+      .output p {
+        margin: 5px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Legal Question Answering System</h1>
+      <form method="POST">
+        <label for="question">Enter your question:</label>
+        <input
+          type="text"
+          id="question"
+          name="question"
+          placeholder="Type your question here..."
+          required
+        />
+        <button type="submit">Submit</button>
+      </form>
+      {% if question %}
+      <div class="output">
+        <h3>Question:</h3>
+        <p>{{ question }}</p>
+        <h3>Relevant Context:</h3>
+        <p>{{ context }}</p>
+        <h3>Answer:</h3>
+        <p>{{ answer }}</p>
+      </div>
+      {% endif %}
+    </div>
+  </body>
+</html>
