@@ -7,7 +7,7 @@ async function extractiveSummary(text) {
   const nounsAndAdjectiveMap = {};
 
   summary.nouns_and_adjactive_map.forEach((value, key) => {
-      nounsAndAdjectiveMap[key] = value;
+    nounsAndAdjectiveMap[key] = value;
   });
 
   return {

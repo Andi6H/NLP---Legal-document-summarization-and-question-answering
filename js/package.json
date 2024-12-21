@@ -12,7 +12,9 @@
     "compromise": "^13.11.0",
     "csv-parser": "^3.0.0",
     "express": "^4.17.1",
-    "node-summarizer": "^1.0.0"
+    "node-summarizer": "^1.0.0",
+    "offscreen-canvas": "^0.1.1",
+    "onnxruntime-node": "^1.20.1"
   },
   "keywords": [],
   "author": "",
